@@ -46,7 +46,7 @@ const formStatus = document.querySelector("#form-status");
 
 function renderDay(dayKey) {
   const day = scheduleData[dayKey];
-  if (!day) return;
+  if (!day || !scheduleDate || !scheduleBody) return;
 
   scheduleDate.textContent = day.label;
   scheduleBody.innerHTML = "";
@@ -71,22 +71,26 @@ tabButtons.forEach((button) => {
   });
 });
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.14 }
-);
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.14 }
+  );
 
-revealEls.forEach((el, idx) => {
-  el.style.transitionDelay = `${Math.min(idx * 55, 320)}ms`;
-  observer.observe(el);
-});
+  revealEls.forEach((el, idx) => {
+    el.style.transitionDelay = `${Math.min(idx * 55, 320)}ms`;
+    observer.observe(el);
+  });
+} else {
+  revealEls.forEach((el) => el.classList.add("visible"));
+}
 
 if (registrationForm) {
   registrationForm.addEventListener("submit", (event) => {
