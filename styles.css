@@ -388,17 +388,22 @@ tbody tr:hover {
   box-shadow: var(--shadow);
 }
 
-.avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  font-size: 0.88rem;
-  color: #ffffff;
-  background: linear-gradient(120deg, var(--accent), var(--accent-2));
-  margin-bottom: 0.65rem;
+.speaker-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.speaker-head h3 {
+  margin: 0;
+}
+
+.speaker-logo {
+  width: 118px;
+  height: 62px;
+  flex: 0 0 118px;
+  object-fit: contain;
 }
 
 .speaker-role {
@@ -515,6 +520,26 @@ tbody tr:hover {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 1.1rem 1.2rem;
+}
+
+.committee-card-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.9rem;
+}
+
+.committee-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.committee-logo {
+  width: 112px;
+  height: 82px;
+  flex: 0 0 112px;
+  object-fit: contain;
+  margin: 0.1rem 0 0;
 }
 
 .committee-card p {
@@ -646,6 +671,18 @@ tbody tr:hover {
 
   .course-strip {
     grid-template-columns: 1fr;
+  }
+
+  .speaker-logo {
+    width: 102px;
+    height: 54px;
+    flex-basis: 102px;
+  }
+
+  .committee-logo {
+    width: 96px;
+    height: 72px;
+    flex-basis: 96px;
   }
 
   th,
