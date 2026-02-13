@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer School on Modular Forms</title>
+    <meta
+      name="description"
+      content="International Summer School on Modular Forms and Related Topics in Number Theory, May 17-19, 2026, Akdeniz University, Antalya."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Sora:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-a"></div>
+    <div class="bg-shape bg-shape-b"></div>
+    <div class="bg-shape bg-shape-c"></div>
+
+    <header class="hero section">
+      <nav class="top-nav">
+        <a class="brand" href="#top">INTERNATIONAL SUMMER SCHOOL 2026</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#speakers">Speakers</a>
+          <a href="#committee">Committee</a>
+          <a href="#registration">Registration</a>
+        </div>
+      </nav>
+
+        <div class="hero-grid" id="top">
+          <div class="hero-copy reveal">
+            <h1>Modular Forms and Related Topics in Number Theory</h1>
+            <p class="lead">
+              A three-day intensive program connecting students and researchers
+              through mini-courses, research discussions, and regional
+              collaboration.
+          </p>
+          <div class="meta-chips">
+            <span>May 17-19, 2026</span>
+            <span>Akdeniz University, Antalya, Turkey</span>
+            <span>Organized with NTRU at CAMS, AUB</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#schedule">View Schedule</a>
+            <a class="btn btn-ghost" href="#speakers">Meet Speakers</a>
+            <a class="btn btn-ghost" href="#registration">Register</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <div class="organizer-badge">
+            <img
+              src="images.jpeg"
+              alt="American University of Beirut logo"
+              loading="lazy"
+            />
+            <p>Organized by the Number Theory Research Unit at the Center for Advanced Mathematical Sciences (CAMS), AUB.</p>
+          </div>
+          <figure class="university-photo">
+            <img
+              src="2_a846c27154.jpg"
+              alt="University campus view"
+              loading="lazy"
+            />
+            <figcaption>University campus setting for the Summer School.</figcaption>
+          </figure>
+          <h2>Program Snapshot</h2>
+          <ul>
+            <li>4 mini-courses by international experts</li>
+            <li>3 full days of lectures and interaction</li>
+            <li>Graduate-level focus on modular forms and L-series</li>
+            <li>Breakout sessions for direct student-faculty exchange</li>
+          </ul>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="section-head reveal">
+          <p class="eyebrow">About The School</p>
+          <h2>Building a Regional Hub for Number Theory</h2>
+        </div>
+        <div class="grid-2">
+          <article class="card reveal">
+            <h3>Vision</h3>
+            <p>
+              The school fosters high-level collaboration between Turkish and
+              Lebanese mathematical communities through a focused program on
+              modular forms and neighboring areas in number theory.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Objectives</h3>
+            <ul class="clean-list">
+              <li>Strengthen regional research networks</li>
+              <li>Transfer advanced knowledge to graduate students</li>
+              <li>Spark joint projects and future publications</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="course-strip reveal">
+          <article>
+            <p class="mini-label">Course 1</p>
+            <h4>Introduction to Modular Forms</h4>
+            <p>El Guindy</p>
+          </article>
+          <article>
+            <p class="mini-label">Course 2</p>
+            <h4>Introduction to Algebraic Number Theory</h4>
+            <p>Craig</p>
+          </article>
+          <article>
+            <p class="mini-label">Course 3</p>
+            <h4>L-Series in Number Theory</h4>
+            <p>Hamieh</p>
+          </article>
+          <article>
+            <p class="mini-label">Course 4</p>
+            <h4>Introduction to Siegel Modular Forms</h4>
+            <p>Kohnen</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-schedule" id="schedule">
+        <div class="section-head reveal">
+          <p class="eyebrow">Lecture Plan</p>
+          <h2>Daily Schedule</h2>
+        </div>
+
+        <div class="tab-bar reveal" role="tablist" aria-label="Schedule Days">
+          <button class="tab-btn active" data-day="2026-05-17" role="tab">
+            May 17
+          </button>
+          <button class="tab-btn" data-day="2026-05-18" role="tab">
+            May 18
+          </button>
+          <button class="tab-btn" data-day="2026-05-19" role="tab">
+            May 19
+          </button>
+        </div>
+
+        <div class="schedule-card reveal">
+          <h3 id="schedule-date">May 17, 2026</h3>
+          <div class="table-wrap">
+            <table aria-describedby="schedule-date">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Session</th>
+                </tr>
+              </thead>
+              <tbody id="schedule-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="speakers">
+        <div class="section-head reveal">
+          <p class="eyebrow">Faculty</p>
+          <h2>Speaker Profiles</h2>
+        </div>
+
+        <div class="speaker-grid">
+          <article class="speaker-card reveal">
+            <div class="avatar">AE</div>
+            <h3>Ahmad El-Guindy</h3>
+            <p class="speaker-role">Course: Introduction to Modular Forms</p>
+            <p class="speaker-bio">
+              Number theorist with work on modular forms, period polynomials,
+              and Drinfeld modules. Listed in CAMS number theory activities.
+            </p>
+            <div class="source-links">
+              <a href="https://www.aub.edu.lb/cams/Pages/Number_Theory_Unit.aspx"
+                >CAMS NTRU</a
+              >
+              <a href="https://agya.info/agya-life/members/ahmad-el-guindy"
+                >AGYA Profile</a
+              >
+            </div>
+          </article>
+
+          <article class="speaker-card reveal">
+            <div class="avatar">WC</div>
+            <h3>William Craig</h3>
+            <p class="speaker-role">
+              Course: Introduction to Algebraic Number Theory
+            </p>
+            <p class="speaker-bio">
+              Researcher in number theory and combinatorics, with active work
+              on partitions, modular and quasi-modular forms, and related
+              arithmetic topics.
+            </p>
+            <div class="source-links">
+              <a href="https://sites.google.com/view/williamcraignavy/research"
+                >Research Page</a
+              >
+              <a href="https://www.usna.edu/MathDept/research/index.php"
+                >USNA Research</a
+              >
+            </div>
+          </article>
+
+          <article class="speaker-card reveal">
+            <div class="avatar">AH</div>
+            <h3>Alia Hamieh</h3>
+            <p class="speaker-role">Course: L-Series in Number Theory</p>
+            <p class="speaker-bio">
+              Associate Professor at UNBC. Her research centers on modular
+              forms and special values and moments of L-functions in analytic
+              number theory.
+            </p>
+            <div class="source-links">
+              <a href="https://www.unbc.ca/index.php/people/hamieh-dr-alia"
+                >UNBC Profile</a
+              >
+              <a href="https://hamieh.opened.ca/">Personal Site</a>
+              <a href="https://www.aub.edu.lb/cams/Pages/Number_Theory_Unit.aspx"
+                >CAMS NTRU</a
+              >
+            </div>
+          </article>
+
+          <article class="speaker-card reveal">
+            <div class="avatar">WK</div>
+            <h3>Winfried Kohnen</h3>
+            <p class="speaker-role">
+              Course: Introduction to Siegel Modular Forms
+            </p>
+            <p class="speaker-bio">
+              Professor at Heidelberg and a leading specialist in modular and
+              Siegel modular forms, with foundational contributions in the
+              field.
+            </p>
+            <div class="source-links">
+              <a href="https://www.mathi.uni-heidelberg.de/~winfried/"
+                >Heidelberg Page</a
+              >
+            </div>
+          </article>
+        </div>
+        <p class="tiny-note reveal">
+          Note: your schedule lists only the surname “Craig”; this page uses
+          William Craig based on public number theory records and collaboration
+          context with CAMS/AUB.
+        </p>
+      </section>
+
+      <section class="section" id="registration">
+        <div class="section-head reveal">
+          <p class="eyebrow">Registration</p>
+          <h2>Apply to Attend</h2>
+          <p class="lead">
+            Complete the form below and submit. Your email app will open a
+            pre-filled registration email to the organizing team.
+          </p>
+        </div>
+
+        <div class="registration-wrap reveal">
+          <form id="registration-form" class="registration-form">
+            <div class="form-grid">
+              <label>
+                Full Name *
+                <input type="text" name="full_name" required />
+              </label>
+
+              <label>
+                Email Address *
+                <input type="email" name="email" required />
+              </label>
+
+              <label>
+                Phone Number *
+                <input type="tel" name="phone" required />
+              </label>
+
+              <label>
+                Institution / Organization *
+                <input type="text" name="institution" required />
+              </label>
+
+              <label>
+                Affiliation / Department *
+                <input type="text" name="affiliation" required />
+              </label>
+
+              <label>
+                Academic Level *
+                <select name="academic_level" required>
+                  <option value="">Select one</option>
+                  <option>Undergraduate Student</option>
+                  <option>Graduate Student</option>
+                  <option>Postdoctoral Researcher</option>
+                  <option>Faculty</option>
+                  <option>Industry / Other</option>
+                </select>
+              </label>
+
+              <label>
+                Country of Residence *
+                <input type="text" name="country" required />
+              </label>
+
+              <label>
+                Expected Arrival Date
+                <input type="date" name="arrival_date" />
+              </label>
+            </div>
+
+            <label>
+              Dietary or Accessibility Notes
+              <textarea
+                name="dietary_access"
+                rows="3"
+                placeholder="Optional"
+              ></textarea>
+            </label>
+
+            <label>
+              Brief Motivation / Research Interests *
+              <textarea
+                name="motivation"
+                rows="4"
+                placeholder="Tell us why you want to participate."
+                required
+              ></textarea>
+            </label>
+
+            <label class="consent-row">
+              <input type="checkbox" name="consent" required />
+              <span>I confirm the details provided are accurate. *</span>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Submit Registration</button>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" id="committee">
+        <div class="section-head reveal">
+          <p class="eyebrow">Coordination</p>
+          <h2>Coordinators and Organizing Committee</h2>
+        </div>
+
+        <div class="committee-grid">
+          <article class="committee-card reveal">
+            <p class="mini-label">Local Coordinator</p>
+            <h3>Alp Bassa</h3>
+            <p><strong>Institution:</strong> Akdeniz University</p>
+            <p><strong>Position:</strong> Professor</p>
+            <p><strong>Country:</strong> Turkey</p>
+            <p><strong>Email:</strong> <a href="mailto:alpbassa@gmail.com">alpbassa@gmail.com</a></p>
+          </article>
+
+          <article class="committee-card reveal">
+            <p class="mini-label">External Coordinator</p>
+            <h3>Wissam Raji</h3>
+            <p><strong>Institution:</strong> American University of Beirut</p>
+            <p><strong>Position:</strong> Professor</p>
+            <p><strong>Country:</strong> Lebanon</p>
+            <p><strong>Email:</strong> <a href="mailto:wr07@aub.edu.lb">wr07@aub.edu.lb</a></p>
+          </article>
+        </div>
+
+        <div class="committee-list reveal">
+          <h3>Organizing Committee</h3>
+          <ul class="clean-list">
+            <li>
+              <strong>Name:</strong> Chien-Hua Chen<br />
+              <strong>Institution:</strong> American University of Beirut<br />
+              <strong>Position:</strong> Assistant Professor<br />
+              <strong>Email:</strong> <a href="mailto:cc45@aub.edu.lb">cc45@aub.edu.lb</a>
+            </li>
+            <li>
+              <strong>Name:</strong> Kamal Khuri-Makdisi<br />
+              <strong>Gender:</strong> Male<br />
+              <strong>Institution:</strong> American University of Beirut<br />
+              <strong>Position:</strong> Professor<br />
+              <strong>Email:</strong> <a href="mailto:kmakdisi@aub.edu.lb">kmakdisi@aub.edu.lb</a>
+            </li>
+            <li>
+              <strong>Name:</strong> Hiba Hammoud<br />
+              <strong>Gender:</strong> Female<br />
+              <strong>Institution:</strong> American University of Beirut<br />
+              <strong>Position:</strong> Executive Office of CAMS<br />
+              <strong>Email:</strong> <a href="mailto:bh47@aub.edu.lb">bh47@aub.edu.lb</a>
+            </li>
+            <li>
+              <strong>Name:</strong> Jihad Touma<br />
+              <strong>Gender:</strong> Male<br />
+              <strong>Institution:</strong> American University of Beirut<br />
+              <strong>Position:</strong> Professor, Director of CAMS<br />
+              <strong>Email:</strong> <a href="mailto:jt00@aub.edu.lb">jt00@aub.edu.lb</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section footer">
+      <p>
+        Organized by the Number Theory Research Unit at the Center for Advanced
+        Mathematical Sciences (CAMS), American University of Beirut, in
+        collaboration with partners in Turkey.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
